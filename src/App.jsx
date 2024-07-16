@@ -5,6 +5,7 @@ import Header from './components/Header_Footer/Header/Header';
 import Footer from './components/Header_Footer/Footer/Footer';
 import Catalog from './components/Pages/Catalog/Catalog';
 import SingleCard from './components/Pages/SingleCard/SingleCard';
+import Faq from './components/Pages/Faq/Faq';
 
 export default function App() {
   return (
@@ -14,6 +15,7 @@ export default function App() {
         <Route path='/' element={<Home/>} />
         <Route path='/Catalog' element={<Catalog/>} />
         <Route path='/Catalog/:id' element={<SingleCard/>}/>
+        <Route path='/Faq' element={<Faq/>} />
       </Routes>
       <Footer/>
     </>

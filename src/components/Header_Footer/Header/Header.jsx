@@ -12,8 +12,7 @@ export default function Header() {
                         <div className="header__nav">
                             <NavLink to='/' className="header__nav-link">Главная</NavLink>
                             <NavLink to='/Catalog' className="header__nav-link">Каталог</NavLink>
-                            <NavLink to='/Contacts' className="header__nav-link">Контакты</NavLink>
-                            <NavLink to='/Questions' className="header__nav-link">Вопросы</NavLink>
+                            <NavLink to='/Faq' className="header__nav-link">Вопросы</NavLink>
                         </div>
                         <div className="header__btns"> 
                             <a href="#" className="header__btns-btn"><img src="./src/assets/imgs/Cart.svg" alt="" /></a>

@@ -16,8 +16,7 @@ export default function Footer(){
                                     <NavLink className='footer__nav-link' to='/Catalog'>Каталог</NavLink>
                                 </div>
                                 <div className="footer__nav-col">
-                                    <NavLink className='footer__nav-link' to='/Contacts'>Контакты</NavLink>
-                                    <NavLink className='footer__nav-link' to='/Questions'>Вопросы</NavLink>
+                                    <NavLink className='footer__nav-link' to='/Faq'>Вопросы</NavLink>
                                 </div>
                             </div>
                             <div className="footer__contacts">

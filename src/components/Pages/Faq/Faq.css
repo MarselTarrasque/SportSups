@@ -1,0 +1,20 @@
+.faq-items{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.faq{
+    margin: 50px 0;
+}
+.defaulstyle{
+    font-family: "Montserrat", sans-serif;
+}
+.faq_title{
+ font-size: 20px;
+}
+.faq_text-bold{
+    font-weight: bold;
+}
+.faq_text{
+    font-size: 18px;
+}
