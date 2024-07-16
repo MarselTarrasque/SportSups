@@ -1,0 +1,39 @@
+.reviewcard{
+    padding: 20px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 10px;    
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.senderinfo{
+    display: flex;
+    gap: 20px;
+}
+.senderinfo>img{
+    width: 60px;
+    height: 60px;
+    background: url("./src/assets/imgs/ReviewPhoto.png");
+}
+.senderinfo_name-date{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    align-items: start;
+    justify-content: center;
+}
+.sendername{
+    font-weight: 400;
+    font-size: 22px;
+    color: #000;
+}
+.date{
+    font-weight: 400;
+    font-size: 18px;
+    color: rgba(0, 0, 0, 0.3);
+}
+.sender-review-text{
+    font-weight: 400;
+    font-size: 18px;
+    color: #000;
+}

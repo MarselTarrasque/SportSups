@@ -1,0 +1,103 @@
+.homepagecard__inner{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+}
+.homepagecard__inner-title{
+    font-weight: 400;
+    font-size: 18px;
+    text-align: center;
+    color: #000;
+}
+.homepagecard_desc{
+    display: flex;
+    gap: 8px;
+    justify-content: center;
+    align-items: center;
+}
+.homepagecard{
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    padding: 20px 35px;
+}
+.homepagecard_desc-type, .homepagecard_desc-weight{
+    font-weight: 400;
+    font-size: 14px;
+    color: #000;
+}
+.homepagecard_desc-dot{
+    font-weight: 400;
+    font-size: 20px;
+    color: #000;
+}
+.homepagecard_rate{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+.homepagecard_rate-number{
+    text-align: center;
+    font-weight: 400;
+    font-size: 14px;
+    color: #000;
+}
+.homepagecard-price{
+    font-weight: 400;
+    font-size: 18px;
+    text-align: center;
+    color: #000;
+}
+.homepagecard-btns{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+}
+.homepagecard-more-btn{
+    font-weight: 400;
+    font-size: 16px;
+    text-align: center;
+    color: #fff;
+    border-radius: 5px;
+    padding: 9px 20px;
+    background: #4aabff;
+    align-items: center;
+    justify-content: center;
+}
+.homepagecard-cart{
+    border-radius: 5px;
+    padding: 7px;
+    background: #4aaaff;
+}
+.homepagecard:hover>.homepagecard__inner>img{
+    transform: scale(1.05);
+}
+img{
+    transition: linear 0.2s;
+}
+.homepagecard-price_block{
+    display: flex;
+    gap: 5px;
+}
+.homepagecard-old_price{
+        font-weight: 400;
+        font-size: 12px;
+        text-decoration: line-through;
+        text-align: center;
+        color: rgba(0, 0, 0, 0.5);
+}
+.homepagecard-price_main{
+    font-weight: 400;
+    font-size: 18px;
+    text-align: center;
+    color: #000;
+}
+.homepagecard-disc_price{
+    font-weight: 400;
+    font-size: 18px;
+    text-align: center;
+    color: #f00;
+}

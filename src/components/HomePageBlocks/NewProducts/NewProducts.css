@@ -1,0 +1,18 @@
+.newproducts-title{
+    font-weight: 400;
+    font-size: 32px;
+    text-align: center;
+    color: #000;
+}
+.newproducts-items{
+    display: flex;
+    justify-content: space-between;
+}
+.newproducts__inner{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.newproducts{
+    margin-bottom: 50px;
+}

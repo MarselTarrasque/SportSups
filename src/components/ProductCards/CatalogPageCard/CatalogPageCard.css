@@ -1,0 +1,76 @@
+.catalogpagecard{
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    padding: 20px; 
+}
+.catalogpagecard__inner{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+.catalogpagecard__info{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.catalogpagecard__inner-title{
+    font-weight: 400;
+    font-size: 22px;
+    color: #000;
+}   
+.catalogpagecard_rate{
+    display: flex;
+    justify-content: start;
+    align-items: end;
+    text-align: center;
+    font-weight: 400;
+    font-size: 18px;
+    color: #000;
+    gap: 5px;
+}
+.catalogpagecard-price_block{
+    display: flex;
+    justify-content: start;
+    align-items: start;
+}
+.catalogpagecard-disc_price{
+    font-weight: 400;
+    font-size: 22px;
+    text-align: center;
+    color: #f00;
+}
+.catalogpagecard-old_price{
+    margin-left: 10px;
+    font-weight: 400;
+    font-size: 18px;
+    text-decoration: line-through;
+    text-align: start;
+    color: rgba(0, 0, 0, 0.3);
+}
+.catalogpagecard-price_main{
+    font-weight: 400;
+    font-size: 22px;
+    text-align: center;
+    color: #000;
+}
+.catalogpagecard-buttons{
+    display: flex;
+    gap: 10px;
+}
+.catalogpagecard-brn-more{
+    border-radius: 5px;
+    padding: 7px 20px;
+    font-weight: 400;
+    font-size: 18px;
+    text-align: center;
+    color: #fff;
+    background: #4aabff;
+}
+.catalogpagecard-btn-cart{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    padding: 6px;
+    background: #4aaaff;
+}

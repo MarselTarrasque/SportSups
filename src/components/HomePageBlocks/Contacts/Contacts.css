@@ -1,0 +1,51 @@
+.contacts{
+    margin-bottom: 50px;
+}
+.contacts__inner{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+}
+.contacts-title{
+    font-weight: 400;
+    font-size: 32px;
+    text-align: center;
+    color: #000;
+}
+.contacts-info{
+    display: flex;
+    gap: 50px;
+    align-items: start;
+}
+.contacts-left{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    gap: 10px;
+}
+.contacts-info-text{
+    font-weight: 400;
+    font-size: 24px;
+    color: #000;    
+}
+.contacts-right{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+    gap: 10px;
+}
+.contacts-mobileapp-text{
+    font-weight: 400;
+    font-size: 24px;
+    color: #000;
+}
+.contacts_links{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}

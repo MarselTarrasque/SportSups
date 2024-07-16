@@ -1,0 +1,23 @@
+.aboutus{
+    margin-bottom: 50px;
+}
+.aboutus__inner{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+.aboutus-title{
+    text-align: center;
+    font-weight: 400;
+    font-size: 32px;
+    text-align: center;
+    color: #000;    
+}
+.aboutus-text{
+    font-weight: 400;
+    font-size: 24px;
+    text-align: center;
+    color: #000;
+}
