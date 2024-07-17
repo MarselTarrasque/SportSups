@@ -1,7 +1,7 @@
 .homepagecard__inner{
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: end;
     align-items: center;
     gap: 12px;
 }
@@ -21,6 +21,8 @@
     border: 1px solid rgba(0, 0, 0, 0.2);
     border-radius: 8px;
     padding: 20px 35px;
+    display: flex;
+    justify-content: end;
 }
 .homepagecard_desc-type, .homepagecard_desc-weight{
     font-weight: 400;
@@ -80,7 +82,7 @@ img{
 }
 .homepagecard-price_block{
     display: flex;
-    gap: 5px;
+
 }
 .homepagecard-old_price{
         font-weight: 400;
@@ -88,6 +90,7 @@ img{
         text-decoration: line-through;
         text-align: center;
         color: rgba(0, 0, 0, 0.5);
+        margin-left: 5px;
 }
 .homepagecard-price_main{
     font-weight: 400;

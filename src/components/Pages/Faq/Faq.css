@@ -2,15 +2,18 @@
     display: flex;
     flex-direction: column;
     gap: 30px;
+    font-family: "Montserrat", sans-serif;
 }
 .faq{
     margin: 50px 0;
+    font-family: "Montserrat", sans-serif;
 }
 .defaulstyle{
     font-family: "Montserrat", sans-serif;
 }
 .faq_title{
- font-size: 20px;
+    font-size: 20px;
+    font-family: "Montserrat", sans-serif;
 }
 .faq_text-bold{
     font-weight: bold;

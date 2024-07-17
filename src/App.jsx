@@ -6,9 +6,11 @@ import Footer from './components/Header_Footer/Footer/Footer';
 import Catalog from './components/Pages/Catalog/Catalog';
 import SingleCard from './components/Pages/SingleCard/SingleCard';
 import Faq from './components/Pages/Faq/Faq';
-
+import { useLocation } from 'react-router-dom';
+import { useEffect } from 'react';
 export default function App() {
   return (
+    
     <>
       <Header/>
       <Routes>

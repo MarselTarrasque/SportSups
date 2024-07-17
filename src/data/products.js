@@ -21,7 +21,7 @@ export const store = [
         name: '100% Golden Whey',
         price: 6190,
         discount: 0,
-        category: 'Протеин',
+        category: 'Креатин',
         weight: '2270',
         fabricator: 'Maxler',
         taste: 'Молочный шоколад',

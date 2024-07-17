@@ -57,14 +57,14 @@
 }
 .banner_item-first{
     position: absolute;
-    top: 22%;
-    right: 34%;
+    top: 28%;
+    right: 30%;
     z-index: 1;
 }
 .banner_item-second{
     position: absolute;
-    top: 22%;
-    right: 28.5%;
+    top: 28%;
+    right: 21%;
 }
 .banner_item{
     transition: linear 0.2s;

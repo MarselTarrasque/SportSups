@@ -6,7 +6,7 @@
 }
 .popularproducts-items{
     display: flex;
-    justify-content: space-between;
+    gap: 20px;
 }
 .popularproducts__inner{
     display: flex;

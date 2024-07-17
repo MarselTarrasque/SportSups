@@ -3,25 +3,61 @@ import { useParams } from "react-router-dom";
 import { store } from '../../../data/products';
 import HomeCardPage from '../../ProductCards/HomePageCard/HomeCardPage';
 import ReviewCard from '../../ProductCards/ReviewCard/ReviewCard';
+import * as React from 'react';
 export default function SingleCard(){
-    const { id } = useParams();
-    const product = store.find(product => product.id == id);
+    const [products, setProducts] = React.useState([]); 
+    const { id } = useParams(); 
+    const product = products.find(item => item.id === parseInt(id)); 
+    React.useEffect(() => {
+        fetch('http://127.0.0.1:8000/api/products') 
+        .then(response => response.json())
+        .then(data => setProducts(data))
+        .catch(error => console.error('Ошибка при получении данных:', error));
+    }, []);
+    if (!product) {
+        return <div>Продукт не найден</div>;
+    }
+    const fabricatorNames = [
+        'Maxler', 
+        'Optimum Nutrition',
+        'GeneticLab Nutrition',
+        'Syntrax',
+        'Rline',
+        'Mutant',
+        'Ultimate',
+        'Universal Nutrition',
+    ];
+    const categoryNames =[
+        'Протеин',
+        'Креатин',
+        'Гейнеры',
+        'Аминокислоты',
+        'Восстановители',
+        'Витамины',
+    ]
+    const tastesNames = [
+        'Молочный шоколад', 'Без вкуса', 'Клубника', 'Банан', 'Карамель', 'Ванильное мороженое', 'Шоколадно-арахисов', 'Чизкейк', 'Капучино', 'Клубника-банан', 'Клубничный крем', 'Темный шоколад', 'Соленая карамель'
+    ]
+    const typeNames = [
+        'Сывороточный',
+        'В капсулах',
+    ]
     return(
         <>
             <div className="singleproduct">
                 <div className="container">
                     <div className="singleproduct__inner">
-                        <h1 className="singleproduct-title">{product.product} {product.fabricator} {product.name}, {product.weight}, {product.taste}</h1>
+                        <h1 className="singleproduct-title">{categoryNames[product.product_category_id-1]} {fabricatorNames[product.product_fabricator_id-1]} {product.name}, {product.weight} г, {tastesNames[product.product_taste_id -1]}</h1>
                         <div className="singleproduct__all">
                             <div className="product">
                                 <div className="product__info-inner">
-                                    <img className="singleproduct-image" src={product.img} alt="" />
+                                    <img className="singleproduct-image" src={product.image} alt="" />
                                     <div className="product__info-desc">
-                                        <p className="product__info-desc-text">Продукт: {product.product}</p>
+                                        <p className="product__info-desc-text">Продукт: {categoryNames[product.product_category_id-1]}</p>
                                         <p className="product__info-desc-text">Вес: {product.weight}</p>
-                                        <p className="product__info-desc-text">Производитель: {product.fabricator}</p>
-                                        <p className="product__info-desc-text">Вкус: {product.taste}</p>
-                                        <p className="product__info-desc-text">Тип: {product.type}</p>
+                                        <p className="product__info-desc-text">Производитель: {fabricatorNames[product.product_fabricator_id-1]}</p>
+                                        <p className="product__info-desc-text">Вкус: {tastesNames[product.product_taste_id -1]}</p>
+                                        <p className="product__info-desc-text">Тип: {typeNames[product.product_type_id-1]}</p>
                                         <p className="product__info-desc-text">Артикул: {product.id}</p>
                                     </div>
                                 </div>
@@ -58,7 +94,7 @@ export default function SingleCard(){
                         <h1 className="popularproducts-title">Интересные предложения</h1>
                         <div className="popularproducts-items">
                             {
-                                store.slice(0, 4).map(item => <HomeCardPage img={item.img} reviews={item.reviews} name={item.name} discount={item.discount} type={item.type} weight={item.weight} rate={item.rate} price={item.price}/>)
+                                products.slice(0, 4).map(item => <HomeCardPage key={item.id} id={item.id} img={item.image} name={item.name} discount={item.discount} category={categoryNames[item.product_category_id-1]} weight={item.weight} rate={item.rate} price={item.price}/>)
                             }
                         </div>
                     </div>
@@ -81,7 +117,7 @@ export default function SingleCard(){
                         <h1 className="desc-title">
                             Описание
                         </h1>
-                        <p className="descriprion-text">{product.descriprion}</p>
+                        <p className="descriprion-text">{product.description}</p>
                     </div>
                 </div>
             </div>
